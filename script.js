@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
 			commentsList.innerHTML = '<p style="color:#888;">No comments yet.</p>';
 			return;
 		}
-		comments.forEach(comment => {
+		comments.forEach((comment, idx) => {
 			const div = document.createElement('div');
 			div.style.marginBottom = '16px';
 			div.style.padding = '10px';
 			div.style.background = '#f7f7f7';
 			div.style.borderRadius = '6px';
-			div.textContent = comment;
+			div.innerHTML = `<strong style="color:#234b57;">Comment ${idx + 1}</strong><br><span>${comment}</span>`;
 			commentsList.appendChild(div);
 		});
 	}
