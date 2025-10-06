@@ -201,7 +201,7 @@ section > h2,
     border: none;
     cursor: pointer;
     margin-left: auto;
-    margin-top: -70px;
+    margin-top: -90px;
 }
 .sidebar-toggle span {
     display: block;
@@ -660,6 +660,10 @@ section > h2,
         gap: 10px;
         position: fixed;
         width: 100%;
+    }
+
+    .logo{
+        margin-top: -10px;
     }
 
     .hero {
